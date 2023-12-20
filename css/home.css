@@ -1,0 +1,47 @@
+body {
+    background: url('../img/background1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.description {
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 4px;
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.button a {
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0);
+    color: rgb(216, 236, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}

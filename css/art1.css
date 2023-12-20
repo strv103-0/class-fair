@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'SeoulHangang';
+    src: url('SeoulHangang.eot');
+    src: url('SeoulHangang.eot?#iefix') format('embedded-opentype'),
+         url('SeoulHangang.woff2') format('woff2'),
+         url('SeoulHangang.woff') format('woff'),
+         url('SeoulHangang.ttf') format('truetype'),
+         url('SeoulHangang.svg#SeoulHangang') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url('../img/background3.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'SeoulHangang', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+body::after {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.description {
+    width: 100%;
+    text-align: left;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    color: #9e7810;
+}
+
+.description h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.description p {
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.cell {
+    flex: 1;
+    width: 100%;
+    margin: 0 5%;
+    text-align: center;
+    height: auto;
+}
+
+.cell img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    box-shadow: 7px 7px 10px 7px #868e96
+}
+
+.button {
+    position: fixed;
+    left: 90%;
+    bottom: 2%;
+    width: 84px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px #868e96
+}
+
+.button a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
