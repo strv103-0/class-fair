@@ -1,14 +1,26 @@
 body {
-    background: url('../img/background1.jpg') no-repeat center center fixed; 
+    background: url('../img/background2.jpeg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
     font-family: '나눔바른고딕', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+}
+
+body::after {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(10px);
 }
 
 .description {
@@ -16,22 +28,24 @@ body {
     text-align: left;
     padding: 50px 100px;
     box-sizing: border-box;
+    color: #77b9ee;
 }
 
 .description h1 {
-    margin-bottom: 20px;
-    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-size: 2.5em;
 }
 
 .description p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 .grid {
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    gap: 20px;
+    gap: -10px;
     padding-top: 20px;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -46,7 +60,7 @@ body {
 }
 
 .cell img {
-    width: 90%;
+    width: 110%;
     height: auto;
     margin: auto;
     box-shadow: 7px 7px 10px 7px #868e96
