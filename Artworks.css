@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.description {
+    background: rgba(0,0,0,0);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    left: 10%;
+    top: 20%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    left: 80%;
+}
+
+
+.cell {
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.cell img {
+    width: 100%;
+    height: auto;
+}
