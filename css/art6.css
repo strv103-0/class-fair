@@ -1,5 +1,5 @@
 body {
-    background: url('../img/background1.jpg') no-repeat center center fixed; 
+    background: url('../img/background4.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -11,20 +11,34 @@ body {
     background-color: #f5f5f5;
 }
 
+body::after {
+    content: "";
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(10px);
+}
+
 .description {
     width: 100%;
     text-align: left;
     padding: 50px 100px;
     box-sizing: border-box;
+    color: #ec0505;
 }
 
 .description h1 {
-    margin-bottom: 20px;
-    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-size: 2.5em;
 }
 
 .description p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 .grid {
@@ -49,7 +63,7 @@ body {
     width: 90%;
     height: auto;
     margin: auto;
-    box-shadow: 7px 7px 10px 7px #868e96
+    box-shadow: 7px 7px 10px 7px #502609
 }
 
 .button {
@@ -59,7 +73,7 @@ body {
     width: 84px;
     text-align: center;
     box-sizing: border-box;
-    box-shadow: 5px 5px 5px 5px #868e96
+    box-shadow: 5px 5px 5px 5px #331003
 }
 
 .button a {
